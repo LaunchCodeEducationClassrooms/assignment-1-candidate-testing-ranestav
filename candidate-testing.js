@@ -58,6 +58,7 @@ function gradeQuiz(candidateAnswers) {
   } else {
     console.log('Status: You Failed :(')
   }
+  return grade;
 }
 
 function runProgram() {
