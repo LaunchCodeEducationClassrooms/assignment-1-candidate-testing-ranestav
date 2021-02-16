@@ -49,7 +49,8 @@ function gradeQuiz(candidateAnswers) {
       numCorrectAnswers ++;
     }
   }
-  console.log('\nScore: ' + ((numCorrectAnswers / correctAnswers.length) * 100) + '%');
+  let grade = ((numCorrectAnswers / correctAnswers.length) * 100);
+  console.log(`\nScore: ${grade}%`);
   if (numCorrectAnswers >= 4) {
     console.log('Status: You Passed!');
   } else {
